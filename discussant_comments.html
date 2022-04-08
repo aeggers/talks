@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Discussant comments</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Andy Eggers" />
+    <meta name="date" content="2022-04-08" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/remark-css/default-fonts.css" rel="stylesheet" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Discussant comments
+### Andy Eggers
+### April 8, 2022
+
+---
+
+
+
+
+
+# Castro and Retamal: overview
+
+- protests, riots, and repression in Bolivia and Chile in 2019: what effect (at municipality level) on subsequent elections?
+- diff-in-diff with *very nice* parallel trends in pre-treatment period
+- summary of results:
+    - at municipality level:
+        - protests `\(\rightarrow\)` more turnout, less incumbent vote share
+        - riots `\(\rightarrow\)` more turnout, less incumbent vote share
+        - repression (given protests/riots) `\(\rightarrow\)` less turnout
+    - at province level (excluding municipalities where protests/riots took place):
+        - protests `\(\rightarrow\)` **less** turnout, **more** incumbent vote share
+        - riots `\(\rightarrow\)` **more** turnout, **less** incumbent vote share
+        - repression (given protests/riots) `\(\rightarrow\)` less turnout
+
+---
+
+    
+# Castro and Retamal: theory and  motivation
+
+- Observing a protest, a riot, a repressive act, how might I react? Depends on 
+    - information revealed (beliefs beforehand)
+    - my preferences
+    - perceived positions of candidates (incumbent and challenger(s))
+    
+And aggregate effects will depends on distribution of beliefs, attention, preferences, etc
+
+This all seems very complicated and context-specific.
+
+- A lot of discussion of mechanisms, but not much attempt (or possibility?) to examine them. I would like a more efficient handling of mechanisms/theory (reasons to think might go up or down), no hypotheses.
+- Would also like clearer motivation. Can you state more clearly why we need this study?
+
+---
+
+# Castro and Retamal: spillovers
+
+- want to see parallel trends for this too (excluded municipalities are always excluded, right?)
+- pay more attention to motivation/interpretation: if same effects, it "is not the municipality effect that matters . . . but rather we are in the presence of a spillover effect from the medium administrative level (province)." Isn't this just "what do people consider relevant?"
+
+
+---
+
+# Castro and Retamal: other
+
+- effect appears to be only in Chile: highlight, explain?
+
+
+---
+
+
+
+
+# Schimpf and Quinlan: overview 
+
+- main tasks: 
+    - measure anti-establishment sentiment 2016-2020
+    - comparing impact of anti-establishment sentiments on vote choice in 2016 and 2020 
+- anti-establishment sentiments: "anti-elitism, anti-immigration views, and nativism"
+- ANES aggregate and panel (intra-individual)
+- changes in sentiment:
+    - anti-elitism goes up 2016-2020, especially among Rs
+    - nativist and anti-immigrant sentiments go down 2016-2020, for Rs but more so for Ds
+- changes in impacts: in 2020, compared to 2016, the impact on the vote is  
+    - larger for anti-elitism 
+    - smaller for nativism
+    - similar for anti-immigration
+
+
+---
+
+# Schimpf and Quinlan: changes in sentiment
+
+Could dissatisfaction with Trump (not agreement with him) be part of increase in anti-elitism? ("Politicians are the main problem in America." "Politicians only care about the rich and powerful.")
+
+---
+
+# Schimpf and Quinlan: impacts on vote choice 
+
+Two different kinds of analysis implied: 
+
+- does attitude `\(X\)` have a stronger/weaker impact on vote choice (or predict vote choice more strongly/weakly conditional on some other predictors) in 2020 vs 2016?
+- does more/less of Trump's support come from voters with attitude `\(X\)` in 2020 than in 2016?
+
+--
+
+For first question, vote choice alone could be enough. For second, you want to (and S&amp;Q do, informally) combine vote choice regression with distribution of attitude. See Grimmer and Marble (2019 working paper) for systematic approach.  
+
+---
+
+# Schimpf and Quinlan: other
+
+- linear probability model: 
+    - not clear on justification: "log odds are virtually a linear probability function"
+    - why switch? i.e. why not use either logit or LPM for all analysis?
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
